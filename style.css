@@ -1,0 +1,227 @@
+body {
+    background-image: url('images/wall.webp');
+    background-size: cover;
+}
+
+.system-software {
+    height: 90vh;
+    width: 100vh;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* background-color:rgba(0, 0, 0, 0.5); */
+}
+
+.system-this-pc {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+
+}
+
+.system-this-pc:hover {
+    background-color: aliceblue;
+}
+
+.this-pc {
+    height: 40px;
+    width: 40px;
+    margin-top: 16px;
+    margin-left: 20px;
+    background-image: url('images/this\ pc.jpg');
+    background-size: cover;
+}
+
+.this-pc-name {
+    color: white;
+    margin-left: 20px;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 50px;
+}
+
+.recycle-bin {
+    height: 45px;
+    width: 35px;
+    margin-left: 23px;
+    margin-top: 40px;
+    background-image: url('images/recycle\ bin.jpg');
+    background-size: cover;
+}
+
+.recycle-bin-name {
+    color: white;
+    margin-left: 12px;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 140px;
+}
+
+.taskbar {
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sun {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 98, 0);
+}
+
+.temperature {
+    height: auto;
+    width: 100px;
+    position: absolute;
+    left: 50px;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.sunny {
+    color: white;
+    font-weight: 100;
+    font-size: small;
+    margin-top: 25px;
+    position: absolute;
+    left: 50px;
+}
+
+.center-menu {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.window {
+    height: 25px;
+    width: 25px;
+    background-image: url(images/taskbar\ window\ icon.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.window:hover {
+    transform: scale(1.08);
+}
+
+.search-bar {
+    height: 28px;
+    width: 220px;
+    margin-left: 15px;
+    background: rgba(130, 127, 127, 0.5);
+    border-radius: 40px;
+    border: 1px solid rgba(130, 127, 127, 0.5);
+}
+
+.search-bar:hover {
+    border: 1px solid white;
+}
+
+.multi-window {
+    height: 25px;
+    width: 25px;
+    background-image: url(images/taskbar\ multi\ window.jpg);
+    background-size: cover;
+    margin-left: 15px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.multi-window:hover {
+    transform: scale(1.08);
+}
+
+.edge {
+    height: 25px;
+    width: 25px;
+    background-image: url(images/taskbar\ edge.jpg);
+    background-size: cover;
+    margin-left: 15px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.edge:hover {
+    transform: scale(1.08);
+}
+
+.files {
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+    background-image: url(images/taskbar\ files.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.files:hover {
+    transform: scale(1.08);
+}
+
+.playstore {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    background-image: url(images/taskbar\ playstore.png);
+    background-size: cover;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.playstore:hover {
+    transform: scale(1.08);
+}
+
+.lenovo-ventage {
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+    background-image: url(images/taskbar\ lenovo\ vintage.png);
+    background-size: cover;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.lenovo-ventage:hover {
+    transform: scale(1.08);
+}
+
+.time {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 15px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calender {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 15px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
