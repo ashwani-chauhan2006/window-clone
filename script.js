@@ -27,3 +27,14 @@ function updateTime() {
   updateTime();
   updateDate();
 
+
+// let taskbar = document.getElementsByClassName("taskbar")[0]
+// let startmenu = document.getElementsByClassName("taskbar")[0]
+// taskbar.addEventListener("clicked",()=>{
+//   if(startmenu.style.bottom === "50px"){
+//     startmenu.style.bottom = "-655px"
+//   }
+//   else{
+//     startmenu.style.bottom = "50px"
+//   }
+// })
