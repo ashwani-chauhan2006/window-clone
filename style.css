@@ -113,6 +113,7 @@ body {
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .taskbar {
     height: 50px;
     position: absolute;
@@ -209,7 +210,7 @@ body {
 .edge {
     height: 25px;
     width: 25px;
-    background-image: url(images/taskbar\ edge.jpg);
+    background-image: url(images/edge.png);
     background-size: cover;
     margin-left: 15px;
     box-sizing: border-box;
@@ -285,21 +286,323 @@ body {
     position: fixed;
     bottom: -655px;
     left: 320px;
-    /* display: flex; */
-    /* justify-content: center; */
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.5);
     transition: all 0.3s ease-in;
 }
-.search-apps{
+
+.search-apps {
     height: 30px;
     width: 90%;
     margin-top: 15px;
     margin-left: 5%;
     border-radius: 20px;
     background-color: rgb(41, 40, 40);
-    border: 1px solid rgb(82, 81, 81);   
+    border: 1px solid rgb(82, 81, 81);
 }
-.system-apps-pinned{
+
+.system-apps-pinned {
     color: white;
+    margin-left: 70px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+}
+
+.all-apps {
+    margin-top: 25px;
+    margin-left: 500px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+
+}
+
+.apps {
+    height: 250px;
+    margin-top: 50px;
+}
+
+.apps-line-one {
+    height: 80px;
+    display: flex;
+}
+
+.system-apps-list-edge {
+    height: 100%;
+    width: 90px;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-edge:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-word {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-word:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-excel {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-excel:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-power-point {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-power-point:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-microsoft-365 {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-power-microsoft-365:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-microsoft-365 {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-microsoft-365:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-outlook {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-outlook:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.apps-line-two {
+    height: 80px;
+    display: flex;
+}
+
+.system-apps-list-microsoft-store {
+    height: 100%;
+    width: 90px;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-microsoft-store:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-photo {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-photo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-Settings {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-Settings:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-xbox {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-xbox:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-solitiear-casual-games {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-solitiear-casual-games:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-microsoft-365 {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-microsoft-365:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-paint {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-paint:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.apps-line-three {
+    height: 80px;
+    display: flex;
+}
+
+.system-apps-list-microsoft-clipchamp {
+    height: 100%;
+    width: 90px;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-microsoft-clipchamp:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-linkedIn {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-linkedIn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-calculator {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-calculator:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-clock {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-clock:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-notepad {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-notepad:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-snipping-tool {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.system-apps-list-snipping-tool:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-list-paint {
+    height: 100%;
+    width: 90px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+.system-apps-list-paint:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.system-apps-footer {
+    height: 70px;
+    margin-top: 67px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.system-dp {
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 65px;
+
+}
+
+.system-name {
+    color: white;
+    margin-left: 10px;
+    font-size: 11px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.system-name:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shutdown {
+    height: 20px;
+    margin-left: 400px;
 }
