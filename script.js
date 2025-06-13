@@ -28,13 +28,15 @@ function updateTime() {
   updateDate();
 
 
-// let taskbar = document.getElementsByClassName("taskbar")[0]
-// let startmenu = document.getElementsByClassName("taskbar")[0]
-// taskbar.addEventListener("clicked",()=>{
-//   if(startmenu.style.bottom === "50px"){
-//     startmenu.style.bottom = "-655px"
-//   }
-//   else{
-//     startmenu.style.bottom = "50px"
-//   }
-// })
+let taskbar = document.getElementsByClassName("window")[0];
+let systemApps = document.getElementsByClassName("system-apps")[0];
+
+taskbar.addEventListener("click", () => {
+  // Get the computed style
+  let currentBottom = getComputedStyle(systemApps).bottom;
+  if (currentBottom === "55px") {
+    systemApps.style.bottom = "-655px";
+  } else {
+    systemApps.style.bottom = "55px";
+  }
+});
