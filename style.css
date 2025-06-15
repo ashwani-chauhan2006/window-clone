@@ -285,7 +285,9 @@ body {
     width: 620px;
     position: fixed;
     bottom: -655px;
-    left: 320px;
+    left: 50%;
+    /* right: 50%; */
+    transform: translateX(-50%);
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.5);
     transition: all 0.3s ease-in;
@@ -324,11 +326,13 @@ body {
     margin-top: 50px;
 }
 
+/* 1st line of apps */
 .apps-line-one {
     height: 80px;
     display: flex;
 }
 
+/* 1st app of line edge  background*/
 .system-apps-list-edge {
     height: 100%;
     width: 90px;
@@ -337,10 +341,31 @@ body {
     background-color: transparent;
 }
 
+/* 1st app edge image  */
+.apps-list-one-edge {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 1st app edge name */
+.apps-list-one-edge-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 1st app edge hover effect */
 .system-apps-list-edge:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 2nd app of list word background */
 .system-apps-list-word {
     height: 100%;
     width: 90px;
@@ -348,10 +373,31 @@ body {
     background-color: transparent;
 }
 
+/* 2nd app word image */
+.apps-list-one-word {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 2nd app word name */
+.apps-list-one-word-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 2nd app hover effect */
 .system-apps-list-word:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 3rd app excel background */
 .system-apps-list-excel {
     height: 100%;
     width: 90px;
@@ -359,10 +405,31 @@ body {
     background-color: transparent;
 }
 
+/* 3rd app excel image */
+.apps-list-one-excel {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 3rd app excel name */
+.apps-list-one-excel-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 3rd app excel hover effect */
 .system-apps-list-excel:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 4th app power point background */
 .system-apps-list-power-point {
     height: 100%;
     width: 90px;
@@ -370,10 +437,31 @@ body {
     background-color: transparent;
 }
 
+/* 4th app power point img */
+.apps-list-one-power-point {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 4th app name */
+.apps-list-one-power-point-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 4th app hover effect */
 .system-apps-list-power-point:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 5th app background */
 .system-apps-list-microsoft-365 {
     height: 100%;
     width: 90px;
@@ -381,21 +469,31 @@ body {
     background-color: transparent;
 }
 
-.system-apps-list-power-microsoft-365:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+/* 5th app power point img */
+.apps-list-one-microsoft-365 {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
 }
 
-.system-apps-list-microsoft-365 {
-    height: 100%;
-    width: 90px;
-    border-radius: 5px;
-    background-color: transparent;
+/* 5th app name */
+.apps-list-one-microsoft-365-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
+/* 5th app hover effect */
 .system-apps-list-microsoft-365:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 6th app background */
 .system-apps-list-outlook {
     height: 100%;
     width: 90px;
@@ -403,15 +501,37 @@ body {
     background-color: transparent;
 }
 
+/* 6th app image */
+.apps-list-one-outlook {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 6th app name */
+.apps-list-one-outlook-name {
+    color: white;
+    position: absolute;
+    top: 180px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 6th app hover effect */
 .system-apps-list-outlook:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 2nd line of apps*/
 .apps-line-two {
     height: 80px;
     display: flex;
 }
 
+/* 1st app of 2nd line background */
 .system-apps-list-microsoft-store {
     height: 100%;
     width: 90px;
@@ -420,10 +540,31 @@ body {
     background-color: transparent;
 }
 
+/* 1st app image */
+.apps-list-two-microsoft-store {
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28px;
+
+}
+
+/* 1st app name */
+.apps-list-two-microsoft-store-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    /* margin-left: 2px; */
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 1st app hover effect */
 .system-apps-list-microsoft-store:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 2nd app background  */
 .system-apps-list-photo {
     height: 100%;
     width: 90px;
@@ -431,10 +572,32 @@ body {
     background-color: transparent;
 }
 
+/* 2nd app image */
+.apps-list-two-photos {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 2nd app name */
+.apps-list-two-photos-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    margin-left: 25px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 2nd app hover effect */
 .system-apps-list-photo:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 3rd app background */
 .system-apps-list-Settings {
     height: 100%;
     width: 90px;
@@ -442,10 +605,32 @@ body {
     background-color: transparent;
 }
 
+/* 3rd app image */
+.apps-list-two-settings {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 3rd app name */
+.apps-list-two-settings-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 3rd app hover effect */
 .system-apps-list-Settings:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 4th app background */
 .system-apps-list-xbox {
     height: 100%;
     width: 90px;
@@ -453,10 +638,32 @@ body {
     background-color: transparent;
 }
 
+/* 4th app image */
+.apps-list-two-xbox {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 4th app name */
+.apps-list-two-xbox-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    margin-left: 28px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 4th app hover effect */
 .system-apps-list-xbox:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 5th app background */
 .system-apps-list-solitiear-casual-games {
     height: 100%;
     width: 90px;
@@ -464,21 +671,32 @@ body {
     background-color: transparent;
 }
 
+/* 5th app image */
+.apps-list-two-solitiear-games {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 5th app name */
+.apps-list-two-solitiear-games-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 5th app hover effect */
 .system-apps-list-solitiear-casual-games:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.system-apps-list-microsoft-365 {
-    height: 100%;
-    width: 90px;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.system-apps-list-microsoft-365:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
+/*6th app background  */
 .system-apps-list-paint {
     height: 100%;
     width: 90px;
@@ -486,15 +704,38 @@ body {
     background-color: transparent;
 }
 
+/* 6th app image */
+.apps-list-two-paints {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 6th app name */
+.apps-list-two-paints-name {
+    color: white;
+    position: absolute;
+    top: 260px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 6th app hover effect */
 .system-apps-list-paint:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 3rd line of apps */
 .apps-line-three {
     height: 80px;
     display: flex;
 }
 
+/* 1st app background */
 .system-apps-list-microsoft-clipchamp {
     height: 100%;
     width: 90px;
@@ -503,10 +744,32 @@ body {
     background-color: transparent;
 }
 
+/* 1st app image */
+.apps-list-three-clipchamp {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 1st app name */
+.apps-line-three-clipchamp-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 1st app hover effect */
 .system-apps-list-microsoft-clipchamp:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 2nd app background */
 .system-apps-list-linkedIn {
     height: 100%;
     width: 90px;
@@ -514,10 +777,32 @@ body {
     background-color: transparent;
 }
 
+/* 2nd app image */
+.apps-list-three-linkedIn {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 2nd app name */
+.apps-line-three-linkedIn-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 2nd app hover effect */
 .system-apps-list-linkedIn:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 3rd app background */
 .system-apps-list-calculator {
     height: 100%;
     width: 90px;
@@ -525,10 +810,32 @@ body {
     background-color: transparent;
 }
 
+/* 3rd app image */
+.apps-list-three-calculator {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 3rd app name */
+.apps-line-three-calculator-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 3rd app hover effect */
 .system-apps-list-calculator:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 4th app background */
 .system-apps-list-clock {
     height: 100%;
     width: 90px;
@@ -536,10 +843,32 @@ body {
     background-color: transparent;
 }
 
+/* 4th app image */
+.apps-list-three-clock {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 4th app name */
+.apps-line-three-clock-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 4th app hover effect */
 .system-apps-list-clock:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 5th app background */
 .system-apps-list-notepad {
     height: 100%;
     width: 90px;
@@ -547,10 +876,32 @@ body {
     background-color: transparent;
 }
 
+/* 5th app image */
+.apps-list-three-notepad {
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 5th app name */
+.apps-line-three-notepad-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 5th app hover effect */
 .system-apps-list-notepad:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* 6th app background */
 .system-apps-list-snipping-tool {
     height: 100%;
     width: 90px;
@@ -558,34 +909,97 @@ body {
     background-color: transparent;
 }
 
+/* 6th app image */
+.apps-list-three-snipping-tool {
+    height: 32px;
+    width: 32px;
+    margin-top: 15px;
+    margin-left: 28px;
+    border-radius: 5px;
+
+}
+
+/* 6th app name */
+.apps-line-three-snipping-tool-name {
+    color: white;
+    position: absolute;
+    top: 340px;
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* 6th app hover effect */
 .system-apps-list-snipping-tool:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.system-apps-list-paint {
-    height: 100%;
-    width: 90px;
-    border-radius: 5px;
-    background-color: transparent;
-
+.previous{
+    height: 69px;
+    /* background-color: red; */
 }
 
-.system-apps-list-paint:hover {
+.previous-recommended{
+    margin-left: 60px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.more-apps{
+    background-color:transparent;
+    border: 0.1px solid white;
+    position: absolute;
+    top: 410px;
+    left: 490px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.recent-app {
+    height: 50px;
+    width: 100px;
+    border-radius: 2px;
+    position: absolute;
+    top: 430px;
+    left: 60px;
+    /* background-color: wheat; */
+}
+
+.recent-app-edge{
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+.recent-app-name{
+    color: white;
+    position: absolute;
+    top: 0px;
+    font-size: 13px;
+    left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.recent-app:hover{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 .system-apps-footer {
-    height: 70px;
-    margin-top: 67px;
+    height: 50px;
+    /* margin-top: 67px; */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color: aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
 }
 
 .system-dp {
-    height: 35px;
+    height: 30px;
     border-radius: 50%;
     margin-left: 65px;
 
