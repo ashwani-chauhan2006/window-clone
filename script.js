@@ -40,3 +40,71 @@ taskbar.addEventListener("click", () => {
     systemApps.style.bottom = "55px";
   }
 });
+
+
+// weather update script
+function updateTemperature() {
+    const tempDiv = document.querySelector('.temperature');
+    if (!tempDiv) {
+        console.error('Temperature div not found');
+        return;
+    }
+
+    // Set initial content
+    tempDiv.textContent = 'Loading...';
+    console.log('Temperature div found, setting loading state');
+
+    // Add error handling for network issues
+    if (!navigator.onLine) {
+        tempDiv.textContent = 'Offline';
+        console.log('Device is offline');
+        return;
+    }
+
+    // Using a free weather API that doesn't require an API key
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=28.6139&longitude=77.2090&current=temperature_2m')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Weather data received:', data);
+            if (data && data.current && typeof data.current.temperature_2m === 'number') {
+                const temp = Math.round(data.current.temperature_2m);
+                tempDiv.textContent = temp + '°C';
+                console.log('Temperature updated successfully:', temp + '°C');
+            } else {
+                throw new Error('Invalid temperature data received');
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching temperature:', error);
+            tempDiv.textContent = '--°C';
+        });
+}
+
+// Update temperature immediately and then every 5 minutes
+updateTemperature();
+setInterval(updateTemperature, 300000); // Update every 5 minutes
+
+// Add event listener for online/offline status
+window.addEventListener('online', updateTemperature);
+window.addEventListener('offline', () => {
+    const tempDiv = document.querySelector('.temperature');
+    if (tempDiv) {
+        tempDiv.textContent = 'Offline';
+    }
+});
+
+
+// taskbar edge redirect to browser page
+document.querySelector('.edge').onclick = function() {
+  window.location.href = 'browser.html';
+};
+
+// previous app edge redirect to browser page 
+document.getElementById('recent-app-edge').onclick = function() {
+  window.location.href = 'browser.html';
+};

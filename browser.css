@@ -1,0 +1,72 @@
+header {
+    height: 100px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.browser-logo-on-head {
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: blue;
+    background-image: url(images/microsoft.png);
+    background-size: cover;
+}
+
+#browser-search-bar {
+    height: 40px;
+    width: 500px;
+    border-radius: 50px;
+    position: absolute;
+    border: 1px solid white;
+    top: 20px;
+    left: 300px;
+}
+
+#search-btn {
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    top: 30px;
+    left: 830px;
+}
+
+.browser-sign-in {
+    height: 25px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    top: 25px;
+    right: 200px;
+}
+
+.browser-pages-list {
+    width: 500px;
+    height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    top: 60px;
+    left: 42%;
+    transform: translateX(-50%);
+}
+
+ul {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+#results-container {
+  margin-top: 100px;
+}

@@ -143,10 +143,13 @@ body {
     left: 50px;
     color: white;
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Arial, sans-serif;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 5px;
 }
 
 .sunny {
@@ -966,24 +969,24 @@ body {
     /* background-color: wheat; */
 }
 
-.recent-app-edge{
+.recent-app-edge {
     height: 35px;
     margin-top: 5px;
     margin-left: 10px;
-    
+
 }
 
-.recent-app-name{
+.recent-app-name {
     color: white;
     position: absolute;
     top: 0px;
     font-size: 13px;
     left: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
 
-.recent-app:hover{
+.recent-app:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 

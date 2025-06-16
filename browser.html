@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini Search</title>
+  <link rel="stylesheet" href="browser.css">
+  <style>
+    .gemini-result {
+      margin: 100px 20px 20px 20px;
+      font-family: sans-serif;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="browser-logo-on-head"></div>
+  <input type="text" id="browser-search-bar" placeholder="Search anything..." />
+  <button id="search-btn">Search</button>
+  <button class="browser-sign-in">Sign in</button>
+  <div class="browser-pages-list">
+    <ul class="browser-pages-list-ul">
+      <li class="browser-pages-list-li">ALL</li>
+      <li class="browser-pages-list-li">.Search</li>
+      <li class="browser-pages-list-li">.Images</li>
+      <li class="browser-pages-list-li">.Videos</li>
+      <li class="browser-pages-list-li">Help</li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const API_KEY = 'AIzaSyBb6ARmNW_s7aRqCRmC9e66mno0SA0k_-Q';
+
+  async function performSearch() {
+    const searchInput = document.getElementById('browser-search-bar');
+    const query = searchInput.value.trim();
+
+    // Remove previous results
+    document.querySelectorAll('.gemini-result').forEach(el => el.remove());
+
+    if (!query) {
+      appendResult('Please enter a prompt.');
+      return;
+    }
+
+    appendResult('Loading... Please wait.');
+
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    const body = {
+      contents: [{ parts: [{ text: query }] }]
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        const message = errorData?.error?.message || 'Unknown error';
+        throw new Error(message);
+      }
+
+      const data = await response.json();
+      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+      if (text) {
+        appendResult(text);
+      } else {
+        appendResult('Unexpected response format.');
+        console.log(data);
+      }
+
+      searchInput.value = '';
+    } catch (error) {
+      console.error(error);
+      appendResult(`Error: ${error.message}`);
+    }
+  }
+
+  function appendResult(message) {
+    const result = document.createElement('div');
+    result.className = 'gemini-result';
+    result.innerHTML = message.replace(/\n/g, '<br>');
+    document.body.appendChild(result);
+  }
+
+  document.getElementById('search-btn').addEventListener('click', performSearch);
+  document.getElementById('browser-search-bar').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') performSearch();
+  });
+</script>
+
+</body>
+</html>
