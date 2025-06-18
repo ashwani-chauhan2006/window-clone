@@ -28,6 +28,7 @@ function updateTime() {
   updateDate();
 
 
+// this manage app bar
 let taskbar = document.getElementsByClassName("window")[0];
 let systemApps = document.getElementsByClassName("system-apps")[0];
 
@@ -108,3 +109,59 @@ document.querySelector('.edge').onclick = function() {
 document.getElementById('recent-app-edge').onclick = function() {
   window.location.href = 'browser.html';
 };
+
+
+let currentInput = '';
+let operator = '';
+let firstValue = '';
+
+function appendNumber(num) {
+  currentInput += num;
+  document.getElementById('calc-display').value = currentInput;
+}
+
+function setOperation(op) {
+  if (currentInput === '') return;
+  operator = op;
+  firstValue = currentInput;
+  currentInput = '';
+}
+
+function calculateResult() {
+  if (firstValue === '' || currentInput === '' || operator === '') return;
+  let result;
+  const a = parseFloat(firstValue);
+  const b = parseFloat(currentInput);
+  switch (operator) {
+    case '+': result = a + b; break;
+    case '-': result = a - b; break;
+    case '*': result = a * b; break;
+    case '/': result = b !== 0 ? a / b : 'Error'; break;
+    default: result = 'Error';
+  }
+  document.getElementById('calc-display').value = result;
+  currentInput = '';
+  operator = '';
+  firstValue = '';
+}
+
+function clearDisplay() {
+  currentInput = '';
+  operator = '';
+  firstValue = '';
+  document.getElementById('calc-display').value = '';
+}
+
+
+// Toggle calculator
+let calculatorApp = document.getElementsByClassName("system-apps-list-calculator")[0];
+let calculatorPanel = document.getElementsByClassName("calculator")[0];
+
+calculatorApp.addEventListener("click", () => {
+  let currentBottom = getComputedStyle(calculatorPanel).bottom;
+  if (currentBottom === "55px") {
+    calculatorPanel.style.bottom = "-655px";
+  } else {
+    calculatorPanel.style.bottom = "55px";
+  }
+});
