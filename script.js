@@ -165,3 +165,9 @@ calculatorApp.addEventListener("click", () => {
     calculatorPanel.style.bottom = "55px";
   }
 });
+
+
+// Redirect "This PC" icon to this_pc.html
+document.querySelector('.system-this-pc').onclick = function() {
+  window.location.href = 'this_pc.html';
+};
