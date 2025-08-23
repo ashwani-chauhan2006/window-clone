@@ -1,10 +1,11 @@
 body {
-    background-image: url('images/wall.webp');
-    background-size: cover;
-    background-color: rgb(2, 2, 43);
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background: 
+        rgba(2, 2, 43, 0.8) url('images/wall.webp') no-repeat center center;
+    background-size: cover; /* Maintains aspect ratio */
+    margin: 0;
+    height: 100vh; /* Ensure full height */
 }
+
 
 .system-this-pc {
     height: 70px;
